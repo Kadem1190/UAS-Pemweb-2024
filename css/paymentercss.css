@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrainsMono', serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #5865fa, #4719a3);
+    padding: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+th {
+    background-color: #5865fa;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+.total-amount {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+.complete-payment {
+    width: 100%;
+    padding: 1rem;
+    background-color: #5865fa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 2rem;
+}
+
+.complete-payment:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    outline: 2px solid yellow;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .total-amount {
+        font-size: 1.2rem;
+    }
+
+    .complete-payment {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'JetBrainsMono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4752c4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    margin: 3rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #5865fa;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #5865fa;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #5865fa;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4752c4;
+}
+
+.go-back {
+    background-color: #aaa;
+    margin-top: 1rem;
+}
+
+.go-back:hover {
+    background-color: #888;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-image: linear-gradient(to bottom, #4752c4, #ffffff);
+    margin-top: auto;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+
+footer p {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer .social-buttons a {
+    text-decoration: none;
+    background-color: #6c78fd;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin: 0 0.5rem;
+}
+
+footer .social-buttons a:hover {
+    background-color: #4752c4;
+}
